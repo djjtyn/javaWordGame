@@ -1,3 +1,5 @@
+package com.mycompany.findwords;
+
 /**
 *Instantiable class Player which checks if the word the player entered is a match with a word in the validWords list
 *This class also deals with managing the points awarded throughout the game

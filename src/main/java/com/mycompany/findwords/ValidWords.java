@@ -1,3 +1,5 @@
+package com.mycompany.findwords;
+
 /**
 *Instantiable class ValidWords
 *Contains an array of validWords that can be used, a setter to set valid words if the words needed to be changed for future use and a getter to return the values in the validWords array

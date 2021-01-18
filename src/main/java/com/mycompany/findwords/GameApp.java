@@ -1,3 +1,5 @@
+package com.mycompany.findwords;
+
 /**
 *GameApp Class
 *An application that makes use of the ValidWords, LetterGenerator, Player and Scanner classes
@@ -6,6 +8,8 @@
 *This class determines who the winner of the game is and displays the results to the users
 *@author David Tynan
 */
+
+
 
 import java.util.Scanner;	//import Scanner class
 
@@ -50,7 +54,7 @@ public class GameApp{
 			System.out.println("Your letters for round " + round + " are:");
 			System.out.println(letters);
 			System.out.println();
-
+			
 			//send the letters to the Player instances using setters
 			playerOne.setLetters(letters);
 			playerTwo.setLetters(playerTwoLetters);
@@ -61,7 +65,7 @@ public class GameApp{
 
 			//PLAYER ONE
 			//get a word from playerOne using the Scanner and assign to playerOneWord variable
-			System.out.print("PlayerOne, what is your word?: ");
+			System.out.println("PlayerOne, what is your word?: ");
 			playerOneWord = sc.next();
 
 			//send word attained with scanner to PlayerOne instance
@@ -80,7 +84,7 @@ public class GameApp{
 			int playerTwoTotalPoints = playerTwo.getTotalPoints();
 			//get a word from playerTwo using the Scanner and assign to playerTwoWord variable. Repeat if playerTwo chooses same word as playerOne
 			do{
-				System.out.print("PlayerTwo, what is your word?: ");
+				System.out.println("PlayerTwo, what is your word?: ");
 				playerTwoWord = sc.next();
 				//If the two players choose the same word set the boolean uniquePlayerWord to false
 				if(playerOneWord.equals(playerTwoWord)){

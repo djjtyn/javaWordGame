@@ -1,3 +1,5 @@
+package com.mycompany.findwords;
+
 /**
 *Instantiable class LetterGenerator which generates an array of randomly selected letters and a getter to return the array
 *@author David Tynan
